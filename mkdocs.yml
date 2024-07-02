@@ -1,0 +1,71 @@
+site_name: Rust Tutorial
+theme: 
+  name: material
+  language: en
+  logo: image/rust-logo-blk.svg
+  features:
+    - navigation.tabs #switch between different content easily
+    - navigation.indexes #generate alphabetical indexes of your headings
+    - navigation.sections #enable creation of section header
+    - navigation.top #position navigation bar at the top of the page
+    - navigation.tracking #makes navigation bar remain visible when scrolling down the page
+    - navigation.footer 
+    - search.suggest #provides search suggestions
+    - search.highlight # emphasizes search term
+    - search.share #share search result
+    - content.tabs.link #enables linking between content
+    - content.code.annotation #add annotations to code blocks
+    - content.code.copy #copy code blocks to clipboard
+    - content.tooltips #creates informative tooltips
+    - toc.follow #enables table of content to follow the user as they scroll
+  custom_dir: docs/overrides
+  palette:
+    - scheme: slate
+      primary: deep purple
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - scheme: default
+      primary: purple
+      accent: deep purple
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+plugins:
+  - search
+  - meta-descriptions
+  - minify:
+      minify_html: true
+      minify_js: true
+markdown_extensions:
+  - meta
+nav:
+  - Home:
+    - Introduction: index.md
+    - Overview: overview.md
+    - Installation: installation.md
+  - Fundamentals:
+    - Data Type: Datatype.md
+    - Variable: Variable.md
+    - Function: Function.md
+    - Println: Println.md
+    - Control Flow using 'if': controlflow.md
+copyright: Copyright &copy; 2024 Ileolami
+generator: true
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://www.github.com/ileolami
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/_ileolami
+    - icon: fontawesome/brands/instagram
+      link: https://instagram.com/_ileolami
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/makindemercymiracle/
+    - icon: fontawesome/brands/hashnode
+      link: https://ileolami.hashnode.dev/
+    
